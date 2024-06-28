@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>建築・都市形態工学領域（第7領域）</title>
+    <style>
+        .logo {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            width: 100px;
+            height: 100px;
+        }
+        .seven { fill: #2c3e50; }
+        .circuit { 
+            fill: none; 
+            stroke: #3498db; 
+            stroke-width: 8;
+            stroke-dasharray: 300;
+            stroke-dashoffset: 300;
+            animation: circuitAnimation 2s ease-out forwards;
+        }
+        @keyframes circuitAnimation {
+            to { stroke-dashoffset: 0; }
+        }
+    </style>
+</head>
+<body>
+    <svg class="logo" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+        <path class="seven" d="M40 40 H160 V70 H110 L70 160 H40 L80 70 V40 Z"/>
+        <path class="circuit" d="M40 40 H160 M80 70 L40 160"/>
+    </svg>
+    
+    <!-- ここに他のコンテンツを追加 -->
+</body>
+</html>
